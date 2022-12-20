@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --color-paleBlue:hsl(225, 100%, 94%);
+    --color-brightBlue: hsl(245, 75%, 52%);
+    --color-veryPaleBlue: hsl(225, 100%, 98%);
+    --color-desaturatedBlue: hsl(224, 23%, 55%);
+    --color-darkBlue: hsl(223, 47%, 23%);
+    --color-paragraph:#7280a7;
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body{
+    background-color: var(--color-paleBlue);
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: 5% 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card{
+    max-width: 450px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.card-img{
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.card-heading{
+    text-align: center;
+    font-weight: 900;
+    font-size: 28px;
+    margin: 10% 0% 3%;
+    color:var(--color-darkBlue);
+}
+
+.description{
+    width:80%;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0% auto;
+    color: var(--color-paragraph);
+}
+
+.plan{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3% auto 5%;
+    padding: 29px 25px; 
+    border-radius: 12px;
+    background-color: var(--color-veryPaleBlue);
+}
+
+.plan-left{
+    display: flex;
+    align-items: center;
+}
+
+.plan-info{
+   margin-left: 18px;
+}
+
+.plan-heading{
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.plan-price{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-paragraph);
+}
+
+.plan-link{
+    color: var(--color-brightBlue);
+    font-weight: 800;
+}
+
+.plan-link:hover{
+    text-decoration: none;
+    color:#6e66cc;
+}
+
+button{
+    display: block;
+    margin: 0% auto 5%;
+    cursor: pointer;
+}
+
+.card-main-btn{
+    font-size: 14.4px;
+    width:80%;
+    padding: 16px;
+    text-align: center;
+    border-radius: 12px;
+    border: none;
+    background-color: var(--color-brightBlue);
+    color: #fff;
+    font-weight: 800;
+    box-shadow: rgba(0, 0, 255, 0.24) 0px 9px 10px;
+    margin-bottom: 8%;
+}
+
+.card-main-btn:hover{ 
+    opacity: 0.7;
+}
+
+.card-cancel-btn{
+    border: none;
+    background-color: white;
+    margin: 4% auto 11%; 
+    font-weight: 800;
+    color: var(--color-paragraph);
+    font-size: 14.4px;
+}
+
+
+@media(max-width:375px){
+    body{
+        background-image: url(../images/pattern-background-mobile.svg);
+        background-position: 100% 0%;
+}
+    .card{
+        width: 290px;
+    }
+
+    .plan{
+        width: 88%;
+        padding: 29px 10px; 
+    }
+
+    .plan-img{
+        width: 35px;
+    }
+
+    .card-main-btn{
+        width: 88%;
+    }
+}
